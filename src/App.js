@@ -11,9 +11,9 @@ function App() {
     <BrowserRouter>
     <Nav title="Text Tools"/>
     <Routes>
-    <Route path='/' element={<Main />} />
-    <Route path='/About-us' element={<About />} />
-    <Route path='/Contact-us' element={<Contact />} />
+    <Route path='/Text-Tools' element={<Main />} />
+    <Route path='/Text-Tools/About-us' element={<About />} />
+    <Route path='/Text-Tools/Contact-us' element={<Contact />} />
     </Routes>
     <Footer />
     </BrowserRouter>
