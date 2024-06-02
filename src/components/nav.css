@@ -1,0 +1,54 @@
+#navbar {
+    background-color: yellowgreen;
+    color: black;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0%;
+    margin: 0%;
+    position: relative;
+}
+
+#one,.list {
+    list-style-type: none;
+    margin-left: 30px;
+}
+#one {
+    font-size: 25px;
+    color: white;
+}
+.lone {
+    text-decoration: none;
+    color: black;
+}
+.lone:hover {
+color: red;
+cursor: pointer;
+}
+#mode {
+    width: 50px;
+    height: 25px;
+    background-color: white;
+    list-style-type: none;
+    border: 3px solid black;
+    border-radius: 25px;
+    position: absolute;
+    right: 50px;
+}
+#select {
+    width: 25px;
+    height: 22px;
+    background-color: green;
+    list-style-type: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+}
+#mod {
+    position: absolute;
+    right: 8px;
+    list-style: none;
+    font-weight: 700;
+}
