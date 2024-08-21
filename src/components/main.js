@@ -19,8 +19,8 @@ export default function Main (){
 
       <div>
       <h2>Your text summary :</h2>
-        <p>{text.length} Words and {text.split(" ").filter((value)=>{return value.length!==0;}).length} Characters</p>
-        <p>{(text.split(" ").filter((value)=>{return value.length!==0;}).length * 0.21).toPrecision(5)} Second to Read</p>
+        <p>{text.split(/\s+/).filter((value)=>{return value.length!==0;}).join("").length} Characters and {text.split(/\s+/).filter((value)=>{return value.length!==0;}).length} Words</p>
+        <p>{(text.split(/\s+/).filter((value)=>{return value.length!==0;}).length * 0.21).toPrecision(5)} Second to Read</p>
         <h3>Preview</h3>
         <p>{text}</p>
       </div>
@@ -29,7 +29,7 @@ export default function Main (){
 }
 
 function extra (text,setText){
-  let x=text.split(" ").filter((value)=>{return value.length!==0;});
+  let x=text.split(/\s+/).filter((value)=>{return value.length!==0;});
   let y=x.join(" ");
   setText(y);
 }

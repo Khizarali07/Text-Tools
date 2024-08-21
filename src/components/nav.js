@@ -2,21 +2,7 @@ import "./nav.css";
 import { Link } from "react-router-dom";
 
 export default function Nav(props) {
-  const auto = () => {
-    let x = document.getElementById("navbar1");
-    let y = document.getElementById("navbar2");
-    let z = document.getElementById("menu");
-
-    if (window.innerWidth < 550) {
-      x.style.display = "none";
-      y.style.display = "none";
-      z.style.backgroundColor = "green";
-    } else {
-      x.style.display = "contents";
-      y.style.display = "none";
-      z.style.display = "none";
-    }
-  };
+  
   return (
     <>
       <ul id="navbar">
